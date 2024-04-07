@@ -25,18 +25,29 @@ These instructions are for Mac OS using the zsh shell, which is the default shel
 2. Type 'cd ~' and Enter.
 3. To remove node.js using npm, type 'npm uninstall -g node' and Enter.
 4. To remove the Node.js executable and the npm modules:
+   
    a. Type 'sudo rm /usr/local/bin/node' and Enter.
+   
    b. Type 'sudo rm -rf /usr/local/lib/node_modules' and Enter.
-5. To remove the Node.js home directory, type 'rm -rf ~/.npm' and Enter.
-6. To Remove the nvm installation directory, type 'rm -rf ~/.nvm' and Enter.
-7. Remove the nvm script file from .zshrc:
+   
+6. To remove the Node.js home directory, type 'rm -rf ~/.npm' and Enter.
+7. To Remove the nvm installation directory, type 'rm -rf ~/.nvm' and Enter.
+8. Remove the nvm script file from .zshrc:
+   
    a. vi ~/.zshrc
+   
    b. find and delete the line 'source ~/.nvm/nvm.sh'.
+   
    c. Save and exit the vi editor.
-8. Restart the terminal window.
+   
+10. Restart the terminal window.
 
 Node.js, npm and nvm should be removed from your Mac. You can verify the uninstallation by running the following command:
+
   a. node -v
+  
   b. npm -v
+  
   c. nvm -v
+  
 If Node.js, npm and nvm are uninstalled, you should see an error message saying that the associated command is not found.
